@@ -1,0 +1,66 @@
+nav {
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.login-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.login-button {
+    outline: none;
+    background-color: white;
+    color: rgba(0,0,0,0.7);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 10px;
+    width: 90%;
+    height: 37px;
+}
+.bottom-navbar {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    bottom: 0;
+}
+.bottombar-item {
+    color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-around;
+}
+.bottombar-item a {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    gap: 5px;
+    width: 100%;
+}
+.bottombar-item a:hover {
+    background-color: rgb(214, 234, 252);    
+}
+
+@media (min-width: 992px) {
+    .bottom-navbar {
+        display: none;
+    }
+    .login-button {
+        width: 120px;
+        height: 30px;
+    }
+    .login-btn-container {
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+}

@@ -27,7 +27,7 @@ nav {
     background-color: white;
     position: fixed;
     width: 100%;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    /* box-shadow: 0px 5px 10px rgba(0,0,0,0.2); */
     bottom: 0;
 }
 .bottombar-item {
@@ -48,7 +48,12 @@ nav {
     width: 100%;
 }
 .bottombar-item a:hover {
-    background-color: rgb(214, 234, 252);    
+    background-color: rgb(214, 234, 252); 
+    color: rgba(0,0,0,0.7);
+}
+.bottombar-item > .active {
+    background: rgb(151, 151, 241);
+    color: white;
 }
 
 @media (min-width: 992px) {

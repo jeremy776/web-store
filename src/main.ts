@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
 const app = express();
+import * as config from './config.json';
 
 const midtransClient = require("midtrans-client");
 
@@ -15,12 +16,16 @@ app.use(express.json());
 
 // Home page
 app.get('/', function(req: Request, res: Response) {
-    res.render('index');
+    res.render('index', {
+        name: config.brandName
+    });
 });
 
 // login page
 app.get('/login', function(req: Request, res: Response) {
-    res.render('login');
+    res.render('login', {
+        name: config.brandName
+    });
 })
 
 

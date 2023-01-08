@@ -1,15 +1,33 @@
 .containers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-}
-.form-login {
     background-color: white;
-    max-width: 350px;
-    padding: 25px;
-    border-radius: 4px;
+    transition: all 0.4s ease;
+    max-width: 550px;
 }
+
 .title-card {
     margin-bottom: 20px;
+}
+
+.form-login {
+    padding: 25px;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .containers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        min-height: 100vh;
+        background-color: transparent;
+    }
+
+    .form-login {
+        background-color: white;
+        max-width: 350px;
+        border-radius: 4px;
+    }
 }

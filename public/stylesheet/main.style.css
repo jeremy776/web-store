@@ -1,3 +1,15 @@
-body {
-    background-color: #e2e2e2 !important;
+.overflow-scroll-style::-webkit-scrollbar {
+    height: 5px !important;
+}
+.overflow-scroll-style::-webkit-scrollbar-track {
+    /* background: rgb(202, 200, 200); */
+    background: transparent;
+    border-radius: 50px !important;
+}
+.overflow-scroll-style::-webkit-scrollbar-thumb {
+    border-radius: 50px !important;
+    background: rgb(151, 151, 241);
+}
+.overflow-scroll-style::-webkit-scrollbar-thumb:hover {
+    background: rgb(157, 157, 238);
 }
